@@ -12,6 +12,7 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
+        int i = 0;
         public Form1()
         {
             InitializeComponent();
@@ -19,7 +20,8 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            button1.Text = "ok";
+            button1.Text = "ok" + i.ToString();
+            i++;
         }
     }
 }
